@@ -5,13 +5,17 @@
 //  Created by Martin on 29.11.2021.
 //
 
+import AppStart
 import SwiftUI
 
 @main
-struct Weather_clean_archApp: App {
+struct MainApp: App {
+    
+    let appStart = AppStart()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView(appStart: appStart)
         }
     }
 }
